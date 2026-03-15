@@ -6,6 +6,12 @@ class CoffeeMaker:
             "milk": 200,
             "coffee": 100,
         }
+        # Store initial values for refill
+        self.initial_resources = {
+            "water": 300,
+            "milk": 200,
+            "coffee": 100,
+        }
 
     def report(self):
         """Prints a report of all resources."""
@@ -27,3 +33,9 @@ class CoffeeMaker:
         for item in order.ingredients:
             self.resources[item] -= order.ingredients[item]
         print(f"Here is your {order.name} ☕️. Enjoy!")
+
+    def refill(self):
+        """Refills all resources to their initial values."""
+        self.resources = self.initial_resources.copy()
+        print("🔄 All resources have been refilled to maximum!")
+        self.report()

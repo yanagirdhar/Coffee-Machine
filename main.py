@@ -18,6 +18,7 @@ for item in menu.menu:
     
 print("\n⚙️  COMMANDS:")
 print("   • 'report' - View machine status")
+print("   • 'refill' - Refill all resources")
 print("   • 'off' - Shutdown machine")
 print("   • 'exit' - Exit the program")
 
@@ -34,6 +35,9 @@ while is_on:
         print("\n📊 MACHINE REPORT:")
         coffee_maker.report()
         money_machine.report()
+    elif choice == "refill":
+        print("\n🔄 REFILLING MACHINE:")
+        coffee_maker.refill()
     else:
         drink = menu.find_drink(choice)
         
