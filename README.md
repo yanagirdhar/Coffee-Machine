@@ -16,7 +16,7 @@ A Python-based coffee machine simulator that lets you order delicious coffee dri
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/coffee-machine.git
+git clone https://github.com/yanagirdhar/Coffee-Machine.git
 cd coffee-machine
 ```
 ### 2. Run the program
